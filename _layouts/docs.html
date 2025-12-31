@@ -1,0 +1,26 @@
+---
+layout: default
+---
+<div class="row">
+    <div class="col-md-3 border-end">
+        <h5 class="mb-3">Navigasi</h5>
+        <ul class="nav flex-column">
+            {% assign docs = site.docs | sort: 'order' %}
+            {% for doc in docs %}
+            <li class="nav-item">
+                <a class="nav-link {% if page.url == doc.url %}active fw-bold{% endif %}" href="{{ doc.url | relative_url }}">
+                    {{ doc.title }}
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <div class="col-md-9 ps-md-5">
+        <h1>{{ page.title }}</h1>
+        <hr>
+        <div class="content">
+            {{ content }}
+        </div>
+    </div>
+</div>
