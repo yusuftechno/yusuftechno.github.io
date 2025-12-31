@@ -2,7 +2,7 @@ title: Yusuf Techno
 email: yusuftechno@gmail.com
 description: Website dokumentasi resmi proyek saya.
 baseurl: "" 
-url: "http://localhost:4000"
+url: "https://yusuftechno.github.io"
 
 # Koleksi untuk halaman dokumentasi
 collections:

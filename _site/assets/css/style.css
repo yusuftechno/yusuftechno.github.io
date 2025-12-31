@@ -1,0 +1,39 @@
+/* Styling Sidebar List Group */
+.list-group-item {
+    border-left: 4px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.list-group-item.active {
+    background-color: #f8f9fa;
+    color: #0d6efd;
+    border-color: #dee2e6;
+    border-left-color: #0d6efd; /* Memberi aksen warna di kiri saat aktif */
+}
+
+.list-group-item:hover:not(.active) {
+    background-color: #f1f3f5;
+    border-left-color: #adb5bd;
+}
+
+/* Memperbaiki jarak gambar di dalam dokumentasi */
+.markdown-body img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin: 20px 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Memperbaiki tampilan tabel Bootstrap di Markdown */
+.markdown-body table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+    border-collapse: collapse;
+}
+
+.markdown-body table th, 
+.markdown-body table td {
+    padding: 0.75rem;
+    border: 1px solid #dee2e6;
+}

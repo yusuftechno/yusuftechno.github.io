@@ -1,26 +1,32 @@
 ---
 layout: default
 ---
-<div class="row">
-    <div class="col-md-3 border-end">
-        <h5 class="mb-3">Navigasi</h5>
-        <ul class="nav flex-column">
-            {% assign docs = site.docs | sort: 'order' %}
-            {% for doc in docs %}
-            <li class="nav-item">
-                <a class="nav-link {% if page.url == doc.url %}active fw-bold{% endif %}" href="{{ doc.url | relative_url }}">
-                    {{ doc.title }}
-                </a>
-            </li>
-            {% endfor %}
-        </ul>
-    </div>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-lg-10">
+            <nav aria-label="breadcrumb" class="mb-4">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="{{ '/' | relative_url }}">Beranda</a></li>
+                    <li class="breadcrumb-item active">{{ page.title }}</li>
+                </ol>
+            </nav>
 
-    <div class="col-md-9 ps-md-5">
-        <h1>{{ page.title }}</h1>
-        <hr>
-        <div class="content">
-            {{ content }}
+            <div class="card shadow-sm border-0 p-4 p-md-5">
+                <div class="d-flex justify-content-between align-items-center mb-4 border-bottom pb-3">
+                    <h1 class="fw-bold mb-0 text-dark">{{ page.title }}</h1>
+                    <span class="badge bg-info text-dark">Langkah {{ page.order }}</span>
+                </div>
+
+                <div class="content" style="line-height: 1.8; font-size: 1.1rem;">
+                    {{ content }}
+                </div>
+
+                <hr class="my-5">
+                <div class="d-flex justify-content-between">
+                    <a href="{{ '/' | relative_url }}" class="btn btn-light border">← Kembali ke Menu</a>
+                    <button onclick="window.print()" class="btn btn-secondary shadow-sm">Cetak Panduan (PDF)</button>
+                </div>
+            </div>
         </div>
     </div>
 </div>
