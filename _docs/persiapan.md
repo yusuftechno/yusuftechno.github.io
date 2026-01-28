@@ -1,6 +1,6 @@
 ---
 title: Persiapan & Perizinan
-order: 2
+konten: cctv
 ---
 
 Sebelum memulai bisnis instalasi WiFi dan CCTV, ada beberapa hal mendasar yang perlu disiapkan agar bisnis berjalan legal dan profesional.

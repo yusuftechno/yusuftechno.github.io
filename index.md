@@ -4,12 +4,12 @@ title: Beranda
 ---
 
 <div class="text-center py-5">
-    <h1 class="display-4 fw-bold">DAFTAR DOKUMENTASI</h1>
-    <p class="lead text-muted">Jika terjadi kesalahan dalam pemuatan gambar, text, konten, dan lainnya. Silahkan untuk menghubungi kami..</p>
+    <h2 class="display-4 fw-bold">Wellcome Yusuf Techno</h2>
+    <p class="lead text-muted">Website ini berisikan semua dokumentasi saya. dan jika ada pertanyaan, silahkan menuju ke halaman contact saya.</p>
 </div>
 
 <div class="row g-4 justify-content-center">
-    {% assign docs = site.docs | sort: 'order' %}
+    {% assign docs = site.docs | sort: 'konten' %}
     {% for doc in docs %}
     <div class="col-md-6 col-lg-4">
         <div class="card h-100 shadow-sm border-0 transition-hover">
@@ -19,7 +19,7 @@ title: Beranda
                 </div>
                 <h4 class="card-title fw-bold">{{ doc.title }}</h4>
                 <p class="card-text text-muted small">
-                    Pelajari lebih lanjut mengenai bagian {{ doc.title | downcase }} untuk kelancaran bisnis Anda.
+                    Simak lebih lanjut "{{ doc.title | downcase }}" dengan menekan tombol dibawah ini.
                 </p>
             </div>
             <div class="card-footer bg-transparent border-0 pb-4 text-center">

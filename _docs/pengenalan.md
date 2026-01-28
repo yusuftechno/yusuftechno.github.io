@@ -1,6 +1,6 @@
 ---
 title: Pengenalan
-order: 1
+konten: pembuka
 ---
 Selamat datang di sistem dokumentasi kami. Website ini dirancang untuk memudahkan Anda memahami alur kerja proyek.
 

@@ -1,6 +1,6 @@
 ---
 title: Perangkat & Peralatan
-order: 3
+konten: wifi
 ---
 
 Berikut adalah daftar perangkat standar yang dibutuhkan untuk memulai layanan.

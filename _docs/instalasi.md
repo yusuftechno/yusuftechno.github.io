@@ -1,6 +1,6 @@
 ---
 title: Panduan Instalasi
-order: 4
+konten: modem
 ---
 
 Lakukan langkah-langkah berikut untuk memastikan instalasi rapi dan berfungsi optimal.
