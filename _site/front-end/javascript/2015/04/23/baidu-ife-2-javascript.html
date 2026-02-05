@@ -41,7 +41,7 @@
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
 
-<link rel="alternate" type="application/rss+xml" title="" href="/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="" href="http://localhost:4000/feed.xml">
 
 
 
@@ -311,7 +311,7 @@
   <li><a href="#第一个页面交互" id="markdown-toc-第一个页面交互">第一个页面交互</a>    <ul>
       <li><a href="#了解javascript是什么" id="markdown-toc-了解javascript是什么">了解JavaScript是什么</a></li>
       <li><a href="#如何在-html-页面加载-javascript-代码" id="markdown-toc-如何在-html-页面加载-javascript-代码">如何在 HTML 页面加载 JavaScript 代码</a></li>
-      <li><a href="#为什么把-script-放在-body-前" id="markdown-toc-为什么把-script-放在-body-前">为什么把 <code class="highlighter-rouge">&lt;script&gt;</code> 放在 <code class="highlighter-rouge">&lt;/body&gt;</code> 前</a>        <ul>
+      <li><a href="#为什么把-script-放在-body-前" id="markdown-toc-为什么把-script-放在-body-前">为什么把 <code class="language-plaintext highlighter-rouge">&lt;script&gt;</code> 放在 <code class="language-plaintext highlighter-rouge">&lt;/body&gt;</code> 前</a>        <ul>
           <li><a href="#javascript-的性能优化加载和执行" id="markdown-toc-javascript-的性能优化加载和执行">JavaScript 的性能优化：加载和执行</a></li>
         </ul>
       </li>
@@ -333,12 +333,12 @@
           <li><a href="#array-对象" id="markdown-toc-array-对象">Array 对象</a></li>
         </ul>
       </li>
-      <li><a href="#实现-trim" id="markdown-toc-实现-trim">实现 <code class="highlighter-rouge">trim()</code></a>        <ul>
+      <li><a href="#实现-trim" id="markdown-toc-实现-trim">实现 <code class="language-plaintext highlighter-rouge">trim()</code></a>        <ul>
           <li><a href="#正则表达式" id="markdown-toc-正则表达式">正则表达式</a></li>
           <li><a href="#string对象" id="markdown-toc-string对象">String对象</a></li>
         </ul>
       </li>
-      <li><a href="#遍历数组使每一个元素执行-fn-函数" id="markdown-toc-遍历数组使每一个元素执行-fn-函数">遍历数组，使每一个元素执行 <code class="highlighter-rouge">fn</code> 函数</a></li>
+      <li><a href="#遍历数组使每一个元素执行-fn-函数" id="markdown-toc-遍历数组使每一个元素执行-fn-函数">遍历数组，使每一个元素执行 <code class="language-plaintext highlighter-rouge">fn</code> 函数</a></li>
       <li><a href="#获取对象中第一层元素个数" id="markdown-toc-获取对象中第一层元素个数">获取对象中第一层元素个数</a></li>
       <li><a href="#正则表达式-1" id="markdown-toc-正则表达式-1">正则表达式</a></li>
     </ul>
@@ -406,7 +406,7 @@
 
 <h2 id="第一个页面交互">第一个页面交互</h2>
 
-<p>按照任务中的代码，在IE8下提示：<code class="highlighter-rouge">对象不支持“addEventListener”属性或方法</code>  <br />
+<p>按照任务中的代码，在IE8下提示：<code class="language-plaintext highlighter-rouge">对象不支持“addEventListener”属性或方法</code>  <br />
 我猜是IE8浏览器没有这个方法吧。</p>
 
 <p>参考资料：<a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide">JavaScript 指南-MDN</a></p>
@@ -434,27 +434,27 @@
 
 <h3 id="如何在-html-页面加载-javascript-代码">如何在 HTML 页面加载 JavaScript 代码</h3>
 
-<p>使用 <code class="highlighter-rouge">&lt;script&gt;</code> 标签在 HTML 文件中添加 JavaScript 代码。</p>
+<p>使用 <code class="language-plaintext highlighter-rouge">&lt;script&gt;</code> 标签在 HTML 文件中添加 JavaScript 代码。</p>
 
-<p>我们可以将 <code class="highlighter-rouge">JavaScript</code> 代码放在 <code class="highlighter-rouge">html</code> 文件中任何位置，但是我们一般放在网页的 <code class="highlighter-rouge">head</code> 或者 <code class="highlighter-rouge">body</code> 部分。</p>
+<p>我们可以将 <code class="language-plaintext highlighter-rouge">JavaScript</code> 代码放在 <code class="language-plaintext highlighter-rouge">html</code> 文件中任何位置，但是我们一般放在网页的 <code class="language-plaintext highlighter-rouge">head</code> 或者 <code class="language-plaintext highlighter-rouge">body</code> 部分。</p>
 
-<p>放在 <code class="highlighter-rouge">&lt;head&gt;</code> 部分  <br />
-最常用的方式是在页面中head部分放置 <code class="highlighter-rouge">&lt;script&gt;</code> 元素，浏览器解析 <code class="highlighter-rouge">head</code> 部分就会执行这个代码，然后才解析页面的其余部分。</p>
+<p>放在 <code class="language-plaintext highlighter-rouge">&lt;head&gt;</code> 部分  <br />
+最常用的方式是在页面中head部分放置 <code class="language-plaintext highlighter-rouge">&lt;script&gt;</code> 元素，浏览器解析 <code class="language-plaintext highlighter-rouge">head</code> 部分就会执行这个代码，然后才解析页面的其余部分。</p>
 
-<p>放在 <code class="highlighter-rouge">&lt;body&gt;</code> 部分  <br />
+<p>放在 <code class="language-plaintext highlighter-rouge">&lt;body&gt;</code> 部分  <br />
 JavaScript 代码在网页读取到该语句的时候就会执行。</p>
 
 <p><strong>注意</strong>: javascript 作为一种脚本语言可以放在 html 页面中任何位置，但是浏览器解释 html 时是按先后顺序的，所以前面的 script 就先被执行。比如进行页面显示初始化的 js 必须放在 head 里面，因为初始化都要求提前进行（如给页面 body 设置 css 等）；而如果是通过事件调用执行的 function 那么对位置没什么要求的。</p>
 
 <hr />
 
-<h3 id="为什么把-script-放在-body-前">为什么把 <code class="highlighter-rouge">&lt;script&gt;</code> 放在 <code class="highlighter-rouge">&lt;/body&gt;</code> 前</h3>
+<h3 id="为什么把-script-放在-body-前">为什么把 <code class="language-plaintext highlighter-rouge">&lt;script&gt;</code> 放在 <code class="language-plaintext highlighter-rouge">&lt;/body&gt;</code> 前</h3>
 
 <p>虽然理论上放在哪里都是可以的，但是对于前端页面优化来讲，还是放在底部是最佳的，因为如果JS执行出现错误了，最起码页面中的元素还能加载出来，因为DOM文档是从上往下的顺序执行的。    如果你还不了解DOM的加载顺序，请阅读jQuery中ready与load事件的区别。</p>
 
 <p><strong>下面是重点</strong></p>
 
-<p>按照HTML5标准中的HTML语法规则，如果在 <code class="highlighter-rouge">&lt;/body&gt;</code> 后再出现 <code class="highlighter-rouge">&lt;script&gt;</code> 或任何元素的开始标签，都是parse error，浏览器会忽略之前的 <code class="highlighter-rouge">&lt;/body&gt;</code> ，即视作仍旧在body内。所以实际效果和写在 <code class="highlighter-rouge">&lt;/body&gt;</code> 之前是没有区别的。</p>
+<p>按照HTML5标准中的HTML语法规则，如果在 <code class="language-plaintext highlighter-rouge">&lt;/body&gt;</code> 后再出现 <code class="language-plaintext highlighter-rouge">&lt;script&gt;</code> 或任何元素的开始标签，都是parse error，浏览器会忽略之前的 <code class="language-plaintext highlighter-rouge">&lt;/body&gt;</code> ，即视作仍旧在body内。所以实际效果和写在 <code class="language-plaintext highlighter-rouge">&lt;/body&gt;</code> 之前是没有区别的。</p>
 
 <p>总之，这种写法虽然也能work，但是并没有带来任何额外好处，实际上出现这样的写法很可能是误解了“将script放在页面最末端”的教条。所以还是不要这样写为好。</p>
 
@@ -473,11 +473,11 @@ JavaScript 代码在网页读取到该语句的时候就会执行。</p>
 
 <p><strong>脚本位置</strong></p>
 
-<p>由于脚本会阻塞页面其他资源的下载，因此推荐将所有 <code class="highlighter-rouge">&lt;script&gt;</code> 标签尽可能放到 <code class="highlighter-rouge">&lt;body&gt;</code> 标签的底部，以尽量减少对整个页面下载的影响。</p>
+<p>由于脚本会阻塞页面其他资源的下载，因此推荐将所有 <code class="language-plaintext highlighter-rouge">&lt;script&gt;</code> 标签尽可能放到 <code class="language-plaintext highlighter-rouge">&lt;body&gt;</code> 标签的底部，以尽量减少对整个页面下载的影响。</p>
 
 <p><strong>组织脚本</strong></p>
 
-<p>由于每个 <code class="highlighter-rouge">&lt;script&gt;</code> 标签初始下载时都会阻塞页面渲染，所以减少页面包含的 <code class="highlighter-rouge">&lt;script&gt;</code> 标签数量有助于改善这一情况。这不仅针对外链脚本，内嵌脚本的数量同样也要限制。浏览器在解析 HTML 页面的过程中每遇到一个 <code class="highlighter-rouge">&lt;script&gt;</code> 标签，都会因执行脚本而导致一定的延时，因此最小化延迟时间将会明显改善页面的总体性能。</p>
+<p>由于每个 <code class="language-plaintext highlighter-rouge">&lt;script&gt;</code> 标签初始下载时都会阻塞页面渲染，所以减少页面包含的 <code class="language-plaintext highlighter-rouge">&lt;script&gt;</code> 标签数量有助于改善这一情况。这不仅针对外链脚本，内嵌脚本的数量同样也要限制。浏览器在解析 HTML 页面的过程中每遇到一个 <code class="language-plaintext highlighter-rouge">&lt;script&gt;</code> 标签，都会因执行脚本而导致一定的延时，因此最小化延迟时间将会明显改善页面的总体性能。</p>
 
 <p><strong>无阻塞的脚本</strong></p>
 
@@ -489,40 +489,40 @@ JavaScript 代码在网页读取到该语句的时候就会执行。</p>
   <li>延迟加载脚本</li>
 </ul>
 
-<p>HTML 4 为 <code class="highlighter-rouge">&lt;script&gt;</code> 标签定义了一个扩展属性：defer。Defer 属性指明本元素所含的脚本不会修改 DOM，因此代码能安全地延迟执行。</p>
+<p>HTML 4 为 <code class="language-plaintext highlighter-rouge">&lt;script&gt;</code> 标签定义了一个扩展属性：defer。Defer 属性指明本元素所含的脚本不会修改 DOM，因此代码能安全地延迟执行。</p>
 
-<p>带有 defer 属性的 <code class="highlighter-rouge">&lt;script&gt;</code> 标签可以放置在文档的任何位置。对应的 JavaScript 文件将在页面解析到 <code class="highlighter-rouge">&lt;script&gt;</code> 标签时开始下载，但不会执行，直到 DOM 加载完成，即onload事件触发前才会被执行。当一个带有 defer 属性的 JavaScript 文件下载时，它不会阻塞浏览器的其他进程，因此这类文件可以与其他资源文件一起并行下载。</p>
+<p>带有 defer 属性的 <code class="language-plaintext highlighter-rouge">&lt;script&gt;</code> 标签可以放置在文档的任何位置。对应的 JavaScript 文件将在页面解析到 <code class="language-plaintext highlighter-rouge">&lt;script&gt;</code> 标签时开始下载，但不会执行，直到 DOM 加载完成，即onload事件触发前才会被执行。当一个带有 defer 属性的 JavaScript 文件下载时，它不会阻塞浏览器的其他进程，因此这类文件可以与其他资源文件一起并行下载。</p>
 
 <p>对于如下代码：</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
-<span class="nt">&lt;head&gt;</span>
-    <span class="nt">&lt;title&gt;</span>Script Defer Example<span class="nt">&lt;/title&gt;</span>
-<span class="nt">&lt;/head&gt;</span>
-<span class="nt">&lt;body&gt;</span>
-    <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">defer</span><span class="nt">&gt;</span>
-        <span class="nx">alert</span><span class="p">(</span><span class="s2">"defer"</span><span class="p">);</span>
-    <span class="nt">&lt;/script&gt;</span>
-    <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span><span class="nt">&gt;</span>
-        <span class="nx">alert</span><span class="p">(</span><span class="s2">"script"</span><span class="p">);</span>
-    <span class="nt">&lt;/script&gt;</span>
-    <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span><span class="nt">&gt;</span>
-        <span class="nb">window</span><span class="p">.</span><span class="nx">onload</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(){</span>
-            <span class="nx">alert</span><span class="p">(</span><span class="s2">"load"</span><span class="p">);</span>
-        <span class="p">};</span>
-    <span class="nt">&lt;/script&gt;</span>
-<span class="nt">&lt;/body&gt;</span>
-<span class="nt">&lt;/html&gt;</span>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Script Defer Example&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;script type="text/javascript" defer&gt;
+        alert("defer");
+    &lt;/script&gt;
+    &lt;script type="text/javascript"&gt;
+        alert("script");
+    &lt;/script&gt;
+    &lt;script type="text/javascript"&gt;
+        window.onload = function(){
+            alert("load");
+        };
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
 </code></pre></div></div>
 
-<p>在支持 defer 属性的浏览器上，弹出的顺序则是：”script”、”defer”、”load”。请注意，带有 defer 属性的 <code class="highlighter-rouge">&lt;script&gt;</code> 元素不是跟在第二个后面执行，而是在 onload 事件被触发前被调用。</p>
+<p>在支持 defer 属性的浏览器上，弹出的顺序则是：”script”、”defer”、”load”。请注意，带有 defer 属性的 <code class="language-plaintext highlighter-rouge">&lt;script&gt;</code> 元素不是跟在第二个后面执行，而是在 onload 事件被触发前被调用。</p>
 
 <p>引用的资料可能写的比较早，在 <a href="http://caniuse.com/#search=defer">CanIUse</a> 上查了一下 defer 发现大部分浏览器都是支持的。如下图： <br />
 <img src="http://7q5cdt.com1.z0.glb.clouddn.com/Baidu-Front-end-defer.jpg" alt="defer的支持情况" /></p>
 
-<p>HTML 5 为 <code class="highlighter-rouge">&lt;script&gt;</code> 标签定义了一个新的扩展属性：async。它的作用和 defer 一样，能够异步地加载和执行脚本，不因为加载脚本而阻塞页面的加载。但是有一点需要注意，在有 async 的情况下，JavaScript 脚本一旦下载好了就会执行，所以很有可能不是按照原本的顺序来执行的。如果 JavaScript 脚本前后有依赖性，使用 async 就很有可能出现错误。</p>
+<p>HTML 5 为 <code class="language-plaintext highlighter-rouge">&lt;script&gt;</code> 标签定义了一个新的扩展属性：async。它的作用和 defer 一样，能够异步地加载和执行脚本，不因为加载脚本而阻塞页面的加载。但是有一点需要注意，在有 async 的情况下，JavaScript 脚本一旦下载好了就会执行，所以很有可能不是按照原本的顺序来执行的。如果 JavaScript 脚本前后有依赖性，使用 async 就很有可能出现错误。</p>
 
-<p>IE8,9不支持 <code class="highlighter-rouge">async</code></p>
+<p>IE8,9不支持 <code class="language-plaintext highlighter-rouge">async</code></p>
 
 <ul>
   <li>动态脚本元素</li>
@@ -536,12 +536,12 @@ JavaScript 代码在网页读取到该语句的时候就会执行。</p>
 <p>减少 JavaScript 对性能的影响有以下几种方法：</p>
 
 <ul>
-  <li>将所有的 <code class="highlighter-rouge">&lt;script&gt;</code> 标签放到页面底部，也就是 <code class="highlighter-rouge">&lt;/body&gt;</code> 闭合标签之前，这能确保在脚本执行前页面已经完成了渲染。</li>
-  <li>尽可能地合并脚本。页面中的 <code class="highlighter-rouge">&lt;script&gt;</code> 标签越少，加载也就越快，响应也越迅速。无论是外链脚本还是内嵌脚本都是如此。</li>
+  <li>将所有的 <code class="language-plaintext highlighter-rouge">&lt;script&gt;</code> 标签放到页面底部，也就是 <code class="language-plaintext highlighter-rouge">&lt;/body&gt;</code> 闭合标签之前，这能确保在脚本执行前页面已经完成了渲染。</li>
+  <li>尽可能地合并脚本。页面中的 <code class="language-plaintext highlighter-rouge">&lt;script&gt;</code> 标签越少，加载也就越快，响应也越迅速。无论是外链脚本还是内嵌脚本都是如此。</li>
   <li>采用无阻塞下载 JavaScript 脚本的方法：
     <ul>
-      <li>使用 <code class="highlighter-rouge">&lt;script&gt;</code> 标签的 defer 属性（仅适用于 IE 和 Firefox 3.5 以上版本）；</li>
-      <li>使用动态创建的 <code class="highlighter-rouge">&lt;script&gt;</code> 元素来下载并执行代码；</li>
+      <li>使用 <code class="language-plaintext highlighter-rouge">&lt;script&gt;</code> 标签的 defer 属性（仅适用于 IE 和 Firefox 3.5 以上版本）；</li>
+      <li>使用动态创建的 <code class="language-plaintext highlighter-rouge">&lt;script&gt;</code> 元素来下载并执行代码；</li>
       <li>使用 XHR 对象下载 JavaScript 代码并注入页面中。</li>
     </ul>
   </li>
@@ -580,7 +580,7 @@ JavaScript 代码在网页读取到该语句的时候就会执行。</p>
   <li>
     <p>null 与 undefined 的不同点：</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  typeof null        // object (bug in ECMAScript, should be null)
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  typeof null        // object (bug in ECMAScript, should be null)
   typeof undefined   // undefined
   null === undefined // false
   null == undefined // true
@@ -589,15 +589,15 @@ JavaScript 代码在网页读取到该语句的时候就会执行。</p>
     <p>typeof null 返回 object</p>
   </li>
   <li>Number 数字类型，它并没有为整数给出一种特定的类型。除了能够表示浮点数外，还有一些带符号的值：+Infinity，-Infinity 和 NaN (非数值，Not-a-Number)。</li>
-  <li>NaN与任何值都不相等，包括自身。应当使用 <code class="highlighter-rouge">x != x</code> 来判断，当且仅当 x 为 NaN 的时候，表达式的结果才为 <code class="highlighter-rouge">true</code>。相似的函数有 <code class="highlighter-rouge">isNaN()</code>, <code class="highlighter-rouge">isFinite()</code>。</li>
-  <li>数组直接量的语法允许有可选的结尾逗号，故 <code class="highlighter-rouge">[,,]</code> 只有两个元素而非三个。</li>
+  <li>NaN与任何值都不相等，包括自身。应当使用 <code class="language-plaintext highlighter-rouge">x != x</code> 来判断，当且仅当 x 为 NaN 的时候，表达式的结果才为 <code class="language-plaintext highlighter-rouge">true</code>。相似的函数有 <code class="language-plaintext highlighter-rouge">isNaN()</code>, <code class="language-plaintext highlighter-rouge">isFinite()</code>。</li>
+  <li>数组直接量的语法允许有可选的结尾逗号，故 <code class="language-plaintext highlighter-rouge">[,,]</code> 只有两个元素而非三个。</li>
 </ul>
 
 <hr />
 
 <h3 id="实践判断各种数据类型的方法">实践判断各种数据类型的方法</h3>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// 判断arr是否为一个数组，返回一个bool值
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// 判断arr是否为一个数组，返回一个bool值
 function isArray(arr) {
     return typeof arr === "object" &amp;&amp; Object.prototype.toString.call(arr) === "[object Array]";
 }
@@ -610,13 +610,13 @@ function isFunction(fn) {
 
 <h4 id="数组类型">数组类型</h4>
 
-<p>在 ECMAScript5 中，可以直接使用 <code class="highlighter-rouge">Array.isArray()</code> 来判断数组。</p>
+<p>在 ECMAScript5 中，可以直接使用 <code class="language-plaintext highlighter-rouge">Array.isArray()</code> 来判断数组。</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Array.isArray([]);  //true
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Array.isArray([]);  //true
 Array.isArray({});  //false
 </code></pre></div></div>
 
-<p>我看《JavaScript权威指南上》没有推荐使用 <code class="highlighter-rouge">instanceof</code>，因为可能会有多窗体(frame)存在。</p>
+<p>我看《JavaScript权威指南上》没有推荐使用 <code class="language-plaintext highlighter-rouge">instanceof</code>，因为可能会有多窗体(frame)存在。</p>
 
 <blockquote>
   <p>这样每一个窗口都有一个自己的 JavaScript 环境，有自己的全局对象。并且每个全局对象都有自己的一组构造函数。因此一个窗体中的对象不可能是另外窗体中的构造函数的实例。</p>
@@ -661,9 +661,9 @@ Array.isArray({});  //false
   <li>枚举</li>
 </ul>
 
-<p>你可以在 <code class="highlighter-rouge">for...in</code> 语句中使用方括号标记以枚举一个对象的所有属性。为了展示它如何工作，下面的函数当你将对象及其名称作为参数传入时，显示对象的属性：</p>
+<p>你可以在 <code class="language-plaintext highlighter-rouge">for...in</code> 语句中使用方括号标记以枚举一个对象的所有属性。为了展示它如何工作，下面的函数当你将对象及其名称作为参数传入时，显示对象的属性：</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function showProps(obj, objName) {
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function showProps(obj, objName) {
   var result = "";
   for (var i in obj) {
     if (obj.hasOwnProperty(i)) {
@@ -686,15 +686,15 @@ console.log(showProps(srcObj,'srcObj'));
 
 <p>console:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>srcObj.a = 2
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>srcObj.a = 2
 srcObj.b = [object Object]
 </code></pre></div></div>
 
-<p>这里使用 <code class="highlighter-rouge">hasOwnProperty()</code> 是为了确保是自己的属性而非继承的属性。</p>
+<p>这里使用 <code class="language-plaintext highlighter-rouge">hasOwnProperty()</code> 是为了确保是自己的属性而非继承的属性。</p>
 
 <p>可以如下写，跳过这个对象的方法：</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function showPropsWithoutFun(obj, objName) {
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function showPropsWithoutFun(obj, objName) {
     var result = "";
     for (var i in obj) {
         if (!obj.hasOwnProperty(i)) {       //跳过继承属性
@@ -709,19 +709,19 @@ srcObj.b = [object Object]
 }
 </code></pre></div></div>
 
-<p>相关的方法还有：<code class="highlighter-rouge">Object.keys()</code>, <code class="highlighter-rouge">Object.getOwnPropertyNames()</code></p>
+<p>相关的方法还有：<code class="language-plaintext highlighter-rouge">Object.keys()</code>, <code class="language-plaintext highlighter-rouge">Object.getOwnPropertyNames()</code></p>
 
-<p><code class="highlighter-rouge">Object.keys()</code> 方法会返回一个由给定对象的所有可枚举自身属性的属性名组成的数组，数组中属性名的排列顺序和使用for-in循环遍历该对象时返回的顺序一致（两者的主要区别是 for-in 还会遍历出一个对象从其原型链上继承到的可枚举属性）。</p>
+<p><code class="language-plaintext highlighter-rouge">Object.keys()</code> 方法会返回一个由给定对象的所有可枚举自身属性的属性名组成的数组，数组中属性名的排列顺序和使用for-in循环遍历该对象时返回的顺序一致（两者的主要区别是 for-in 还会遍历出一个对象从其原型链上继承到的可枚举属性）。</p>
 
-<p><code class="highlighter-rouge">Object.getOwnPropertyNames()</code> 方法返回一个由指定对象的所有自身属性的属性名（包括不可枚举属性）组成的数组。</p>
+<p><code class="language-plaintext highlighter-rouge">Object.getOwnPropertyNames()</code> 方法返回一个由指定对象的所有自身属性的属性名（包括不可枚举属性）组成的数组。</p>
 
 <ul>
   <li>创建对象</li>
 </ul>
 
-<p>创建对象的方式有三种：使用对象初始化器，使用构造函数，使用 <code class="highlighter-rouge">Object.create()</code> 方法。</p>
+<p>创建对象的方式有三种：使用对象初始化器，使用构造函数，使用 <code class="language-plaintext highlighter-rouge">Object.create()</code> 方法。</p>
 
-<p><code class="highlighter-rouge">Object.create()</code> 方法创建一个拥有指定原型和若干个指定属性的对象。</p>
+<p><code class="language-plaintext highlighter-rouge">Object.create()</code> 方法创建一个拥有指定原型和若干个指定属性的对象。</p>
 
 <ul>
   <li>继承</li>
@@ -735,7 +735,7 @@ srcObj.b = [object Object]
 
 <p>一个方法 是关联到某个对象的函数，或者简单地说，一个方法是一个值为某个函数的对象属性。定义方法就象定义普通的函数，除了它们必须被赋给对象的某个属性。例如：</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>objectName.methodname = function_name;
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>objectName.methodname = function_name;
 
 var myObj = {
   myMethod: function(params) {
@@ -750,7 +750,7 @@ var myObj = {
 
 <p>了解值类型和引用类型的区别，了解各种对象的读取、遍历方式，并在util.js中实现以下方法：</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// 使用递归来实现一个深度克隆，可以复制一个目标对象，返回一个完整拷贝
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// 使用递归来实现一个深度克隆，可以复制一个目标对象，返回一个完整拷贝
 // 被复制的对象类型会被限制为数字、字符串、布尔、日期、数组、Object对象。不会包含函数、正则对象等
 function cloneObject(src) {
     // your implement
@@ -793,14 +793,14 @@ console.log(tarObj.b.b1[0]);    // "hello"
 <ol>
   <li>判断当前属性是否是引用类型，如果是数组或者对象，创建响应类型变量。</li>
   <li>枚举对象内所有属性。</li>
-  <li>使用 <code class="highlighter-rouge">hasOwnProperty()</code> 方法，排除继承的属性。</li>
+  <li>使用 <code class="language-plaintext highlighter-rouge">hasOwnProperty()</code> 方法，排除继承的属性。</li>
   <li>给新的对象相应位置赋值，若当前属性为引用类型（数组或对象）递归本方法。直到内部的值类型。</li>
   <li>返回新的对象。</li>
 </ol>
 
 <p><strong>我的代码实现：</strong></p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function cloneObject(src) {
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function cloneObject(src) {
     // your implement
     var o; //result
     if (Object.prototype.toString.call(src) === "[object Array]") {
@@ -834,7 +834,7 @@ console.log(tarObj.b.b1[0]);    // "hello"
 
 <p><strong>要求：</strong></p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// 对数组进行去重操作，只考虑数组中元素为数字或字符串，返回一个去重后的数组
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// 对数组进行去重操作，只考虑数组中元素为数字或字符串，返回一个去重后的数组
 function uniqArray(arr) {
     // your implement
 }
@@ -850,13 +850,13 @@ console.log(b); // [1, 3, 5, 7]
 <ol>
   <li>新建一个空数组</li>
   <li>遍历原数组</li>
-  <li>若新数组中不存在当前元素，将其 <code class="highlighter-rouge">push</code> 入新数组中</li>
+  <li>若新数组中不存在当前元素，将其 <code class="language-plaintext highlighter-rouge">push</code> 入新数组中</li>
   <li>返回新数组</li>
 </ol>
 
 <p><strong>实现：</strong></p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// 对数组进行去重操作，只考虑数组中元素为数字或字符串，返回一个去重后的数组
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// 对数组进行去重操作，只考虑数组中元素为数字或字符串，返回一个去重后的数组
 function uniqArray(arr) {
     var newArr = [];    //创建空数组
     for (var i in arr) {    //遍历旧数组
@@ -1026,7 +1026,7 @@ function uniqArray(arr) {
 
 <hr />
 
-<h3 id="实现-trim">实现 <code class="highlighter-rouge">trim()</code></h3>
+<h3 id="实现-trim">实现 <code class="language-plaintext highlighter-rouge">trim()</code></h3>
 
 <p><strong>参考：</strong></p>
 
@@ -1037,7 +1037,7 @@ function uniqArray(arr) {
 
 <p><strong>要求：</strong></p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// 中级班同学跳过此题
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// 中级班同学跳过此题
 // 实现一个简单的trim函数，用于去除一个字符串，头部和尾部的空白字符
 // 假定空白字符只有半角空格、Tab
 // 练习通过循环，以及字符串的一些基本方法，分别扫描字符串str头部和尾部是否有连续的空白字符，并且删掉他们，最后返回一个完成去除的字符串
@@ -1060,13 +1060,13 @@ console.log(str); // 'hi!'
 
 <p><strong>思路：</strong></p>
 
-<p>对于 <code class="highlighter-rouge">simpleTrim()</code> 做两次循环，从前面开始和从后面开始。遇到空格和Tab跳出，最后用 <code class="highlighter-rouge">slice()</code> 取出子字符串。</p>
+<p>对于 <code class="language-plaintext highlighter-rouge">simpleTrim()</code> 做两次循环，从前面开始和从后面开始。遇到空格和Tab跳出，最后用 <code class="language-plaintext highlighter-rouge">slice()</code> 取出子字符串。</p>
 
-<p>对于 <code class="highlighter-rouge">trim()</code> 使用正则表达式。</p>
+<p>对于 <code class="language-plaintext highlighter-rouge">trim()</code> 使用正则表达式。</p>
 
 <p><strong>实现：</strong></p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function simpleTrim(str) {
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function simpleTrim(str) {
     var i;
     var j;
     for (i = 0; i &lt; str.length; i++) { //从头遍历字符串
@@ -1094,11 +1094,11 @@ function trim(str) {
 <p>上面的思路是匹配开头和结尾的空白字符，并全局匹配。</p>
 
 <ul>
-  <li><code class="highlighter-rouge">^</code>：匹配字符串的开头，在多行检索中，匹配一行的开头。</li>
-  <li><code class="highlighter-rouge">$</code>：匹配字符串的结尾，在多行检索中，匹配一行的结尾。</li>
-  <li><code class="highlighter-rouge">|</code>：选择，匹配的是该符号左边的子表达式或右边的子表达式。</li>
-  <li><code class="highlighter-rouge">\s</code>：任何 Unicode 空白符。</li>
-  <li><code class="highlighter-rouge">g</code>：执行一个全局匹配，简言之，即找到所有匹配，而不是找到第一个之后就停止。</li>
+  <li><code class="language-plaintext highlighter-rouge">^</code>：匹配字符串的开头，在多行检索中，匹配一行的开头。</li>
+  <li><code class="language-plaintext highlighter-rouge">$</code>：匹配字符串的结尾，在多行检索中，匹配一行的结尾。</li>
+  <li><code class="language-plaintext highlighter-rouge">|</code>：选择，匹配的是该符号左边的子表达式或右边的子表达式。</li>
+  <li><code class="language-plaintext highlighter-rouge">\s</code>：任何 Unicode 空白符。</li>
+  <li><code class="language-plaintext highlighter-rouge">g</code>：执行一个全局匹配，简言之，即找到所有匹配，而不是找到第一个之后就停止。</li>
 </ul>
 
 <p>以上来自 JavaScript权威指南（犀牛书），感觉这里面将的正则表达式还不错。</p>
@@ -1221,7 +1221,7 @@ function trim(str) {
   <li>静态方法</li>
 </ul>
 
-<p><code class="highlighter-rouge">String.fromCharCode()</code> 使用作为参数传入的字符编码创建一个新的字符串。</p>
+<p><code class="language-plaintext highlighter-rouge">String.fromCharCode()</code> 使用作为参数传入的字符编码创建一个新的字符串。</p>
 
 <ul>
   <li>HTML方法</li>
@@ -1231,11 +1231,11 @@ function trim(str) {
 
 <hr />
 
-<h3 id="遍历数组使每一个元素执行-fn-函数">遍历数组，使每一个元素执行 <code class="highlighter-rouge">fn</code> 函数</h3>
+<h3 id="遍历数组使每一个元素执行-fn-函数">遍历数组，使每一个元素执行 <code class="language-plaintext highlighter-rouge">fn</code> 函数</h3>
 
 <p><strong>要求：</strong></p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// 实现一个遍历数组的方法，针对数组中每一个元素执行fn函数，并将数组索引和元素作为参数传递
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// 实现一个遍历数组的方法，针对数组中每一个元素执行fn函数，并将数组索引和元素作为参数传递
 function each(arr, fn) {
     // your implement
 }
@@ -1259,11 +1259,11 @@ each(arr, output);  // 0:java, 1:c, 2:php, 3:html
 
 <p><strong>分析：</strong></p>
 
-<p>这个任务有点像 <code class="highlighter-rouge">ECMAScript5</code> 中新增的数组方法：<code class="highlighter-rouge">forEach()</code>。还有一点这里的参数 index 是可选形参，保证第一个参数 item 能正常传入就行了，代码非常简单，如下：</p>
+<p>这个任务有点像 <code class="language-plaintext highlighter-rouge">ECMAScript5</code> 中新增的数组方法：<code class="language-plaintext highlighter-rouge">forEach()</code>。还有一点这里的参数 index 是可选形参，保证第一个参数 item 能正常传入就行了，代码非常简单，如下：</p>
 
 <p><strong>实现：</strong></p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function each(arr, fn) {
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function each(arr, fn) {
     for(var i in arr){
         fn(arr[i],i);
     }
@@ -1276,7 +1276,7 @@ each(arr, output);  // 0:java, 1:c, 2:php, 3:html
 
 <p><strong>要求：</strong></p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// 获取一个对象里面第一层元素的数量，返回一个整数
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// 获取一个对象里面第一层元素的数量，返回一个整数
 function getObjectLength(obj) {}
 
 // 使用示例
@@ -1293,12 +1293,12 @@ console.log(getObjectLength(obj)); // 3
 
 <p><strong>实现：</strong></p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function getObjectLength(obj) {
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function getObjectLength(obj) {
     return Object.keys(obj).length;
 }
 </code></pre></div></div>
 
-<p>这个自己写的比较简单，不知道可以这样写不。其中 <code class="highlighter-rouge">Object.keys(o)</code> 为 Object 的一个静态方法，参数是一个对象，返回一个包含o的所有可枚举自有（非继承）属性名字的数组。</p>
+<p>这个自己写的比较简单，不知道可以这样写不。其中 <code class="language-plaintext highlighter-rouge">Object.keys(o)</code> 为 Object 的一个静态方法，参数是一个对象，返回一个包含o的所有可枚举自有（非继承）属性名字的数组。</p>
 
 <hr />
 
@@ -1306,7 +1306,7 @@ console.log(getObjectLength(obj)); // 3
 
 <p><strong>要求：</strong></p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// 判断是否为邮箱地址
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// 判断是否为邮箱地址
 function isEmail(emailStr) {
     // your implement
 }
@@ -1327,7 +1327,7 @@ function isMobilePhone(phone) {
 
 <p><strong>实现：</strong></p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// 判断是否为邮箱地址
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// 判断是否为邮箱地址
 function isEmail(emailStr) {
     var pattern = /^(\w+\.)*\w+@\w+(\.\w+)+$/;
     return pattern.test(emailStr);
@@ -1532,7 +1532,7 @@ function isMobilePhone(phone) {
 
 <p>先来一些简单的，在你的util.js中完成以下任务：</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// 为element增加一个样式名为newClassName的新样式
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// 为element增加一个样式名为newClassName的新样式
 function addClass(element, newClassName) {
     // your implement
 }
@@ -1557,31 +1557,31 @@ function getPosition(element) {
 
 <ul>
   <li>
-    <p><code class="highlighter-rouge">addClass()</code></p>
+    <p><code class="language-plaintext highlighter-rouge">addClass()</code></p>
 
     <p>对于element本身如果没有样式类，那么使用Element的className属性获取的是空字符串，则直接添加新的样式类字符串即可。对于已经有了样式类的元素，获取到原有的样式类后，在后面添加一个空格，再添加新的样式类即可。</p>
   </li>
   <li>
-    <p><code class="highlighter-rouge">removeClass()</code></p>
+    <p><code class="language-plaintext highlighter-rouge">removeClass()</code></p>
 
-    <p>获取原始的样式，然后用正则表达式去匹配这个要删掉的样式，由于是动态的正则表达式，所以要用正则的构造函数 <code class="highlighter-rouge">RegExp()</code> 来创建，并且使用 <code class="highlighter-rouge">\b</code> 来确定单词边界。匹配好后用空字符串替换被匹配的样式类即可。</p>
+    <p>获取原始的样式，然后用正则表达式去匹配这个要删掉的样式，由于是动态的正则表达式，所以要用正则的构造函数 <code class="language-plaintext highlighter-rouge">RegExp()</code> 来创建，并且使用 <code class="language-plaintext highlighter-rouge">\b</code> 来确定单词边界。匹配好后用空字符串替换被匹配的样式类即可。</p>
   </li>
   <li>
-    <p><code class="highlighter-rouge">isSiblingNode()</code></p>
+    <p><code class="language-plaintext highlighter-rouge">isSiblingNode()</code></p>
 
     <p>直接判断两个父节点是不是相同</p>
   </li>
   <li>
-    <p><code class="highlighter-rouge">getPosition()</code></p>
+    <p><code class="language-plaintext highlighter-rouge">getPosition()</code></p>
 
     <p>下面这些内容是我之前的思路，现在觉得太复杂，可以用另一种解决方法。</p>
 
     <blockquote>
-      <p><code class="highlighter-rouge">offsetTop</code>, <code class="highlighter-rouge">offsetLeft</code> 都是相对于最近一个有定位的父元素，如果都没有那么就是相对于 body 的偏移位置。</p>
+      <p><code class="language-plaintext highlighter-rouge">offsetTop</code>, <code class="language-plaintext highlighter-rouge">offsetLeft</code> 都是相对于最近一个有定位的父元素，如果都没有那么就是相对于 body 的偏移位置。</p>
 
-      <p><code class="highlighter-rouge">offsetParent</code> 是寻找最近一个有定位的父级元素，如果没有，那么找到 body 元素。</p>
+      <p><code class="language-plaintext highlighter-rouge">offsetParent</code> 是寻找最近一个有定位的父级元素，如果没有，那么找到 body 元素。</p>
 
-      <p>所以这道题需要先寻找有定位的父级元素，如果都没有，那么就是相对于 body 的偏移了，可以直接使用 <code class="highlighter-rouge">offsetTop</code>, <code class="highlighter-rouge">offsetLeft</code>。</p>
+      <p>所以这道题需要先寻找有定位的父级元素，如果都没有，那么就是相对于 body 的偏移了，可以直接使用 <code class="language-plaintext highlighter-rouge">offsetTop</code>, <code class="language-plaintext highlighter-rouge">offsetLeft</code>。</p>
 
       <p>如果有定位的父级元素不是 body，是 A 元素，那么再寻找 A 元素的最近的有定位的父级元素，如果没有，就是相对于 body 的定位，这时，所求偏移量就是 A 的偏移量加所求元素相对于 A 的偏移量。如果 A 还有已经定位的父级元素，就继续去推，直到找到 body 为止。</p>
 
@@ -1590,21 +1590,21 @@ function getPosition(element) {
 
     <p><strong>另一种方法：</strong></p>
 
-    <p>使用 <code class="highlighter-rouge">getBoundingClientRect()</code> 方法获取当前元素相对于可视区域的位置，再加上滚动条的位置。</p>
+    <p>使用 <code class="language-plaintext highlighter-rouge">getBoundingClientRect()</code> 方法获取当前元素相对于可视区域的位置，再加上滚动条的位置。</p>
 
-    <p>关于滚动条的位置 <code class="highlighter-rouge">scrollTop</code>, <code class="highlighter-rouge">scrollLeft</code> 这两个属性的使用，各个浏览器还都不一样。</p>
+    <p>关于滚动条的位置 <code class="language-plaintext highlighter-rouge">scrollTop</code>, <code class="language-plaintext highlighter-rouge">scrollLeft</code> 这两个属性的使用，各个浏览器还都不一样。</p>
 
     <ul>
       <li>详情见 <a href="http://www.cnblogs.com/zhenyu-whu/archive/2012/11/13/2768004.html">document.body.scrollTop or document.documentElement.scrollTop</a>。</li>
     </ul>
 
-    <p>简单的说就是：FF、Opera 和 IE 浏览器认为在客户端浏览器展示的页面的内容对应于整个 HTML，所以使用 <code class="highlighter-rouge">document.documentElement</code>来代表，相应的滚动距离则通过 <code class="highlighter-rouge">document.documentElement.scrollLeft</code> 和 <code class="highlighter-rouge">document.documentElement.scrollTop</code> 来获取，而 Safari 和 Chrome 浏览器则认为页面开始于 body 部分，从而相应的滚动距离用 <code class="highlighter-rouge">document.body.scrollLeft</code> 和 <code class="highlighter-rouge">document.body.scrollTop</code> 来获取。另外需要注意的是，FF 和 IE 的 quirks mode（兼容模式）下是用 <code class="highlighter-rouge">document.body</code> 来获取的。</p>
+    <p>简单的说就是：FF、Opera 和 IE 浏览器认为在客户端浏览器展示的页面的内容对应于整个 HTML，所以使用 <code class="language-plaintext highlighter-rouge">document.documentElement</code>来代表，相应的滚动距离则通过 <code class="language-plaintext highlighter-rouge">document.documentElement.scrollLeft</code> 和 <code class="language-plaintext highlighter-rouge">document.documentElement.scrollTop</code> 来获取，而 Safari 和 Chrome 浏览器则认为页面开始于 body 部分，从而相应的滚动距离用 <code class="language-plaintext highlighter-rouge">document.body.scrollLeft</code> 和 <code class="language-plaintext highlighter-rouge">document.body.scrollTop</code> 来获取。另外需要注意的是，FF 和 IE 的 quirks mode（兼容模式）下是用 <code class="language-plaintext highlighter-rouge">document.body</code> 来获取的。</p>
 
     <p>documentElement 对应的是 html 标签，而 body 对应的是 body 标签</p>
 
     <p>针对跨浏览器的解决方案则可简单的用如下代码获取：</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  var scrollLeft = Math.max(document.documentElement.scrollLeft, document.body.scrollLeft); 
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  var scrollLeft = Math.max(document.documentElement.scrollLeft, document.body.scrollLeft); 
   var scrollTop = Math.max(document.documentElement.scrollTop, document.body.scrollTop); 
 </code></pre></div>    </div>
   </li>
@@ -1612,7 +1612,7 @@ function getPosition(element) {
 
 <p><strong>实现：</strong></p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// 为element增加一个样式名为newClassName的新样式
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// 为element增加一个样式名为newClassName的新样式
 function addClass(element, newClassName) {
     var oldClassName = element.className; //获取旧的样式类
     element.className = oldClassName === "" ? newClassName : oldClassName + " " + newClassName;
@@ -1645,7 +1645,7 @@ function getPosition(element) {
 
 <p>接下来挑战一个mini $，它和之前的$是不兼容的，它应该是document.querySelector的功能子集，在不直接使用document.querySelector的情况下，在你的util.js中完成以下任务：</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// 实现一个简单的Query
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// 实现一个简单的Query
 function $(selector) {
 
 }
@@ -1686,7 +1686,7 @@ $("#adom .classa"); // 返回id为adom的DOM所包含的所有子节点中，第
 
 <p><strong>实现：</strong></p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>//多个选择器有点难到我了，看了一些资料觉得思路应该如下：
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>//多个选择器有点难到我了，看了一些资料觉得思路应该如下：
 //1.如果存在#，直接从#开始向后查
 //2.如果存在tag直接找到所有的tag然后向后查
 //3.样式类，属性，从后向前查，得到它所有的父节点名称，去筛选匹配
@@ -1794,7 +1794,7 @@ function myQuery(selector, root) {
 
 <p><strong>任务与实现：</strong></p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// 给一个element绑定一个针对event事件的响应，响应函数为listener
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// 给一个element绑定一个针对event事件的响应，响应函数为listener
 function addEvent(element, event, listener) {
     if (element.addEventListener) {
         element.addEventListener(event,listener);
@@ -1815,12 +1815,12 @@ function removeEvent(element, event, listener) {
 
 <p><strong>相关说明：</strong></p>
 
-<p>IE8+ 支持 <code class="highlighter-rouge">addEventListener()</code>。IE8 以下的版本使用 <code class="highlighter-rouge">attachEvent()</code>。</p>
+<p>IE8+ 支持 <code class="language-plaintext highlighter-rouge">addEventListener()</code>。IE8 以下的版本使用 <code class="language-plaintext highlighter-rouge">attachEvent()</code>。</p>
 
 <ul>
-  <li><code class="highlighter-rouge">attachEvent()</code> 不支持时间捕获。</li>
-  <li><code class="highlighter-rouge">attachEvent()</code> 第一个参数事件处理程序属性名使用前缀 on。</li>
-  <li><code class="highlighter-rouge">attachEvent()</code> 允许相同的事件处理程序函数注册多次。</li>
+  <li><code class="language-plaintext highlighter-rouge">attachEvent()</code> 不支持时间捕获。</li>
+  <li><code class="language-plaintext highlighter-rouge">attachEvent()</code> 第一个参数事件处理程序属性名使用前缀 on。</li>
+  <li><code class="language-plaintext highlighter-rouge">attachEvent()</code> 允许相同的事件处理程序函数注册多次。</li>
 </ul>
 
 <hr />
@@ -1829,7 +1829,7 @@ function removeEvent(element, event, listener) {
 
 <p><strong>任务与实现：</strong></p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// 实现对click事件的绑定
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// 实现对click事件的绑定
 function addClickEvent(element, listener) {
     addEvent(element, "click", listener);
 }
@@ -1846,7 +1846,7 @@ function addEnterEvent(element, listener) {
 
 <p><strong>相关说明：</strong></p>
 
-<p>这里我直接使用了上一个任务写好的 <code class="highlighter-rouge">addEvent()</code> 函数。这样可以简化代码，并有良好的兼容性。</p>
+<p>这里我直接使用了上一个任务写好的 <code class="language-plaintext highlighter-rouge">addEvent()</code> 函数。这样可以简化代码，并有良好的兼容性。</p>
 
 <p>enter 键的 keyCode 为 13。</p>
 
@@ -1863,7 +1863,7 @@ function addEnterEvent(element, listener) {
 
 <p><strong>任务与实现：</strong></p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function delegateEvent(element,tag,eventName,listener){
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function delegateEvent(element,tag,eventName,listener){
     addEvent(element, eventName, function(event){
         var target = event.target || event.srcElement;
         if(target.tagName.toLowerCase() == tag.toLowerCase()) {
@@ -1879,7 +1879,7 @@ function addEnterEvent(element, listener) {
 
 <p><strong>任务与实现：</strong></p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// 判断是否为IE浏览器，返回-1或者版本号
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// 判断是否为IE浏览器，返回-1或者版本号
 function isIE() {
     var s = navigator.userAgent.toLowerCase();
     console.log(s);
@@ -1933,7 +1933,7 @@ function getCookie(cookieName) {
 
 <p><strong>任务：</strong></p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// 学习Ajax，并尝试自己封装一个Ajax方法。实现如下方法：
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// 学习Ajax，并尝试自己封装一个Ajax方法。实现如下方法：
 function ajax(url, options) {
     // your implement
 }
@@ -1955,7 +1955,7 @@ ajax(
 
 <p><strong>实现：</strong></p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function ajax(url, options) {
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function ajax(url, options) {
 
     var dataResult; //结果data
 
@@ -2005,11 +2005,11 @@ ajax(
 <ol>
   <li>首先是处理 data，因为测试用例中的 data 是对象，所以把它遍历出来，把键和值中间用 = 连接，和下一组数据用 &amp; 连接。</li>
   <li>处理 type，默认是 GET 请求。</li>
-  <li>使用 <code class="highlighter-rouge">open()</code> 指明请求方法和 url。方法一般为 GET 或 POST。</li>
-  <li>调用 <code class="highlighter-rouge">send()</code> 方法，GET 请求没有主体，所以应该传递 null 或省略这个参数。POST 请求有主体，同时使用 <code class="highlighter-rouge">setRequestHeaders()</code> 来指定 “Content-type” 头。这样便成功发送了请求。</li>
+  <li>使用 <code class="language-plaintext highlighter-rouge">open()</code> 指明请求方法和 url。方法一般为 GET 或 POST。</li>
+  <li>调用 <code class="language-plaintext highlighter-rouge">send()</code> 方法，GET 请求没有主体，所以应该传递 null 或省略这个参数。POST 请求有主体，同时使用 <code class="language-plaintext highlighter-rouge">setRequestHeaders()</code> 来指定 “Content-type” 头。这样便成功发送了请求。</li>
   <li>取的响应。一个完整的 HTTP 响应是由状态码、响应头集合、响应主体组成。
     <ul>
-      <li><code class="highlighter-rouge">readyState</code> 是一个整数，它指定了 HTTP 请求的状态。其值和含义如下表：</li>
+      <li><code class="language-plaintext highlighter-rouge">readyState</code> 是一个整数，它指定了 HTTP 请求的状态。其值和含义如下表：</li>
     </ul>
 
     <table>
@@ -2044,12 +2044,12 @@ ajax(
     </table>
 
     <ul>
-      <li><code class="highlighter-rouge">status</code> 和 <code class="highlighter-rouge">statusText</code> 属性以数字和文本的形式返回 HTTP 状态码。这些属性保存标准的 HTTP 值。如，200和 “OK” 表示成功请求，404和 “Not Found” 表示 URL 不能匹配服务器上的任何资源。</li>
-      <li><code class="highlighter-rouge">getResponseHeader()</code> 和 <code class="highlighter-rouge">getAllResponseHeaders()</code> 能查询响应头。</li>
-      <li>响应主体可以从 <code class="highlighter-rouge">responseText</code> 属性中得到文本形式的，从 <code class="highlighter-rouge">responseXML</code> 属性中得到 Document 形式的。</li>
+      <li><code class="language-plaintext highlighter-rouge">status</code> 和 <code class="language-plaintext highlighter-rouge">statusText</code> 属性以数字和文本的形式返回 HTTP 状态码。这些属性保存标准的 HTTP 值。如，200和 “OK” 表示成功请求，404和 “Not Found” 表示 URL 不能匹配服务器上的任何资源。</li>
+      <li><code class="language-plaintext highlighter-rouge">getResponseHeader()</code> 和 <code class="language-plaintext highlighter-rouge">getAllResponseHeaders()</code> 能查询响应头。</li>
+      <li>响应主体可以从 <code class="language-plaintext highlighter-rouge">responseText</code> 属性中得到文本形式的，从 <code class="language-plaintext highlighter-rouge">responseXML</code> 属性中得到 Document 形式的。</li>
     </ul>
   </li>
-  <li>补充一点 <code class="highlighter-rouge">onreadystatechange</code> 事件会在 <code class="highlighter-rouge">readyState</code> 改变时被触发。</li>
+  <li>补充一点 <code class="language-plaintext highlighter-rouge">onreadystatechange</code> 事件会在 <code class="language-plaintext highlighter-rouge">readyState</code> 改变时被触发。</li>
 </ol>
 
 <p><strong>参考：</strong></p>
@@ -2065,7 +2065,7 @@ ajax(
 
 <h3 id="任务要求">任务要求</h3>
 
-<p>在<code class="highlighter-rouge">task0002</code>目录下创建一个<code class="highlighter-rouge">task0002_1.html</code>文件，以及一个<code class="highlighter-rouge">js</code>目录和<code class="highlighter-rouge">css</code>目录，在<code class="highlighter-rouge">js</code>目录中创建<code class="highlighter-rouge">task0002_1.js</code>，并将之前写的<code class="highlighter-rouge">util.js</code>也拷贝到<code class="highlighter-rouge">js</code>目录下。然后完成以下需求。</p>
+<p>在<code class="language-plaintext highlighter-rouge">task0002</code>目录下创建一个<code class="language-plaintext highlighter-rouge">task0002_1.html</code>文件，以及一个<code class="language-plaintext highlighter-rouge">js</code>目录和<code class="language-plaintext highlighter-rouge">css</code>目录，在<code class="language-plaintext highlighter-rouge">js</code>目录中创建<code class="language-plaintext highlighter-rouge">task0002_1.js</code>，并将之前写的<code class="language-plaintext highlighter-rouge">util.js</code>也拷贝到<code class="language-plaintext highlighter-rouge">js</code>目录下。然后完成以下需求。</p>
 
 <p><strong>第一阶段</strong></p>
 
@@ -2087,7 +2087,7 @@ ajax(
 
 <h3 id="思路">思路</h3>
 
-<p>主要就是对字符串的操作，<code class="highlighter-rouge">split()</code> 的使用，以及正则表达式的使用。</p>
+<p>主要就是对字符串的操作，<code class="language-plaintext highlighter-rouge">split()</code> 的使用，以及正则表达式的使用。</p>
 
 <h3 id="实现">实现</h3>
 
@@ -2102,10 +2102,10 @@ ajax(
 
 <h3 id="任务要求-1">任务要求</h3>
 
-<p>在和上一任务同一目录下面创建一个<code class="highlighter-rouge">task0002_2.html</code>文件，在<code class="highlighter-rouge">js</code>目录中创建<code class="highlighter-rouge">task0002_2.js</code>，并在其中编码，实现一个倒计时功能。</p>
+<p>在和上一任务同一目录下面创建一个<code class="language-plaintext highlighter-rouge">task0002_2.html</code>文件，在<code class="language-plaintext highlighter-rouge">js</code>目录中创建<code class="language-plaintext highlighter-rouge">task0002_2.js</code>，并在其中编码，实现一个倒计时功能。</p>
 
 <ul>
-  <li>界面首先有一个文本输入框，允许按照特定的格式<code class="highlighter-rouge">YYYY-MM-DD</code>输入年月日；</li>
+  <li>界面首先有一个文本输入框，允许按照特定的格式<code class="language-plaintext highlighter-rouge">YYYY-MM-DD</code>输入年月日；</li>
   <li>输入框旁有一个按钮，点击按钮后，计算当前距离输入的日期的00:00:00有多少时间差</li>
   <li>在页面中显示，距离YYYY年MM月DD日还有XX天XX小时XX分XX秒</li>
   <li>每一秒钟更新倒计时上显示的数</li>
@@ -2116,22 +2116,22 @@ ajax(
 
 <ul>
   <li>
-    <p><code class="highlighter-rouge">setInterval()</code> 方法可按照指定的周期（以毫秒计）来调用函数或计算表达式。</p>
+    <p><code class="language-plaintext highlighter-rouge">setInterval()</code> 方法可按照指定的周期（以毫秒计）来调用函数或计算表达式。</p>
 
-    <p><code class="highlighter-rouge">setInterval()</code> 方法会不停地调用函数，直到 <code class="highlighter-rouge">clearInterval()</code> 被调用或窗口被关闭。由 <code class="highlighter-rouge">setInterval()</code> 返回的 ID 值可用作 <code class="highlighter-rouge">clearInterval()</code> 方法的参数。</p>
+    <p><code class="language-plaintext highlighter-rouge">setInterval()</code> 方法会不停地调用函数，直到 <code class="language-plaintext highlighter-rouge">clearInterval()</code> 被调用或窗口被关闭。由 <code class="language-plaintext highlighter-rouge">setInterval()</code> 返回的 ID 值可用作 <code class="language-plaintext highlighter-rouge">clearInterval()</code> 方法的参数。</p>
   </li>
   <li>
-    <p><code class="highlighter-rouge">clearInterval()</code> 方法可取消由 <code class="highlighter-rouge">setInterval()</code> 设置的 timeout。</p>
+    <p><code class="language-plaintext highlighter-rouge">clearInterval()</code> 方法可取消由 <code class="language-plaintext highlighter-rouge">setInterval()</code> 设置的 timeout。</p>
 
-    <p><code class="highlighter-rouge">clearInterval()</code> 方法的参数必须是由 <code class="highlighter-rouge">setInterval()</code> 返回的 ID 值。</p>
+    <p><code class="language-plaintext highlighter-rouge">clearInterval()</code> 方法的参数必须是由 <code class="language-plaintext highlighter-rouge">setInterval()</code> 返回的 ID 值。</p>
   </li>
   <li>
-    <p><code class="highlighter-rouge">setTimeout()</code> 方法用于在指定的毫秒数后调用函数或计算表达式。</p>
+    <p><code class="language-plaintext highlighter-rouge">setTimeout()</code> 方法用于在指定的毫秒数后调用函数或计算表达式。</p>
 
     <p>setTimeout() 只执行 code 一次。如果要多次调用，请使用 setInterval() 或者让 code 自身再次调用 setTimeout()。</p>
   </li>
   <li>
-    <p><code class="highlighter-rouge">clearTimeout()</code> 方法可取消由 setTimeout() 方法设置的 timeout。</p>
+    <p><code class="language-plaintext highlighter-rouge">clearTimeout()</code> 方法可取消由 setTimeout() 方法设置的 timeout。</p>
   </li>
 </ul>
 
@@ -2148,7 +2148,7 @@ ajax(
 
 <h3 id="任务要求-2">任务要求</h3>
 
-<p>在和上一任务同一目录下面创建一个<code class="highlighter-rouge">task0002_3.html</code>文件，在<code class="highlighter-rouge">js</code>目录中创建<code class="highlighter-rouge">task0002_3.js</code>，并在其中编码，实现一个轮播图的功能。</p>
+<p>在和上一任务同一目录下面创建一个<code class="language-plaintext highlighter-rouge">task0002_3.html</code>文件，在<code class="language-plaintext highlighter-rouge">js</code>目录中创建<code class="language-plaintext highlighter-rouge">task0002_3.js</code>，并在其中编码，实现一个轮播图的功能。</p>
 
 <ul>
   <li>图片数量及URL均在HTML中写好</li>
@@ -2182,7 +2182,7 @@ ajax(
 
 <p>评论中有人问到运动部分为什么这样写，下面我讲一下吧。</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function startMove(target) {
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function startMove(target) {
     clearInterval(timerInner);
     timerInner = setInterval(function() {
         var speed = (target - imgListDiv.offsetLeft) / 6;
@@ -2196,11 +2196,11 @@ ajax(
 <p>上面是运动部分代码。</p>
 
 <ul>
-  <li>参数 <code class="highlighter-rouge">target</code> 是运动终点的位置。</li>
+  <li>参数 <code class="language-plaintext highlighter-rouge">target</code> 是运动终点的位置。</li>
   <li>
     <p>首先停止计时器，为了避免上一次调用方法时，计时器没有关闭带来的干扰。</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>clearInterval(timerInner);
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>clearInterval(timerInner);
 </code></pre></div>    </div>
   </li>
   <li>
@@ -2209,7 +2209,7 @@ ajax(
   <li>
     <p>变速运动</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var speed = (target - imgListDiv.offsetLeft) / 6;
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var speed = (target - imgListDiv.offsetLeft) / 6;
 </code></pre></div>    </div>
 
     <p>逐渐变慢，最后停止，距离越远速度越大，速度由距离决定</p>
@@ -2221,7 +2221,7 @@ ajax(
   <li>
     <p>速度取整</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>speed = speed &gt; 0 ? Math.ceil(speed) : Math.floor(speed);
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>speed = speed &gt; 0 ? Math.ceil(speed) : Math.floor(speed);
 </code></pre></div>    </div>
 
     <p>像素不能是小数，所以速度大于0的时候，向上取整。速度小于0时，向下取整</p>
@@ -2229,17 +2229,17 @@ ajax(
   <li>
     <p>最后关于运动终止条件。</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>imgListDiv.style.left = imgListDiv.offsetLeft + speed + "px";
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>imgListDiv.style.left = imgListDiv.offsetLeft + speed + "px";
 </code></pre></div>    </div>
 
-    <p>由这一行可以看出，<code class="highlighter-rouge">imgListDiv.style.left</code> 在不断增大，即 <code class="highlighter-rouge">imgListDiv.offsetLeft</code> 在不断增大。这两个是相同的属性，只不过一个是在赋值时使用，第二个是在取值时使用。</p>
+    <p>由这一行可以看出，<code class="language-plaintext highlighter-rouge">imgListDiv.style.left</code> 在不断增大，即 <code class="language-plaintext highlighter-rouge">imgListDiv.offsetLeft</code> 在不断增大。这两个是相同的属性，只不过一个是在赋值时使用，第二个是在取值时使用。</p>
 
     <p>再看这行代码，由于这部分是每个30ms执行一次的，所以继续执行到这里。</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var speed = (target - imgListDiv.offsetLeft) / 6;
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var speed = (target - imgListDiv.offsetLeft) / 6;
 </code></pre></div>    </div>
 
-    <p>当不断增大的 <code class="highlighter-rouge">imgListDiv.offsetLeft</code> 等于 <code class="highlighter-rouge">target</code> 时，<code class="highlighter-rouge">speed</code> 为0。宏观表现为不再运动，这便是运动终止的状态，但是这里的方法还是不断在执行，每个30ms在执行。</p>
+    <p>当不断增大的 <code class="language-plaintext highlighter-rouge">imgListDiv.offsetLeft</code> 等于 <code class="language-plaintext highlighter-rouge">target</code> 时，<code class="language-plaintext highlighter-rouge">speed</code> 为0。宏观表现为不再运动，这便是运动终止的状态，但是这里的方法还是不断在执行，每个30ms在执行。</p>
   </li>
 </ul>
 
@@ -2249,7 +2249,7 @@ ajax(
 
 <h3 id="任务要求-3">任务要求</h3>
 
-<p>在和上一任务同一目录下面创建一个<code class="highlighter-rouge">task0002_4.html</code>文件，在<code class="highlighter-rouge">js</code>目录中创建<code class="highlighter-rouge">task0002_4.js</code>，并在其中编码，实现一个类似百度搜索框的输入提示的功能。</p>
+<p>在和上一任务同一目录下面创建一个<code class="language-plaintext highlighter-rouge">task0002_4.html</code>文件，在<code class="language-plaintext highlighter-rouge">js</code>目录中创建<code class="language-plaintext highlighter-rouge">task0002_4.js</code>，并在其中编码，实现一个类似百度搜索框的输入提示的功能。</p>
 
 <p>要求如下：</p>
 
@@ -2265,7 +2265,7 @@ ajax(
   <li>不要求和后端交互，可以自己伪造一份提示数据例如：</li>
 </ul>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var suggestData = ['Simon', 'Erik', 'Kener'];
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var suggestData = ['Simon', 'Erik', 'Kener'];
 </code></pre></div></div>
 
 <p><strong>中级班：</strong></p>
@@ -2280,7 +2280,7 @@ ajax(
 
 <p>关于 input 监听的代码如下：</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function addInputListener() {
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function addInputListener() {
     if (inputArea.addEventListener) { // all browsers except IE before version 9
         inputArea.addEventListener("input", OnInput);
     }
@@ -2392,7 +2392,7 @@ function OnPropChanged(event) {
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2026 Copyright Yusuf Techno. All rights reserved. <br />
- Site last generated: Feb 5, 2026 <br />
+ Site last generated: Feb 6, 2026 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>

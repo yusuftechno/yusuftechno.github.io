@@ -20,15 +20,6 @@
 ,
 
 {
-"title": "Page Not Found",
-"tags": "",
-"keywords": "",
-"url": "404.html",
-"summary": ""
-}
-,
-
-{
 "title": "",
 "tags": "",
 "keywords": "",
@@ -757,132 +748,6 @@
 }
 ,
 
-{
-"title": "Collaboration pages",
-"tags": "",
-"keywords": "",
-"url": "tag_collaboration.html",
-"summary": ""
-}
-,
-
-{
-"title": "Content types pages",
-"tags": "",
-"keywords": "",
-"url": "tag_content_types.html",
-"summary": ""
-}
-,
-
-{
-"title": "Formatting pages",
-"tags": "",
-"keywords": "",
-"url": "tag_formatting.html",
-"summary": ""
-}
-,
-
-{
-"title": "Getting started pages",
-"tags": "",
-"keywords": "",
-"url": "tag_getting_started.html",
-"summary": ""
-}
-,
-
-{
-"title": "Mobile Pages",
-"tags": "",
-"keywords": "",
-"url": "tag_mobile.html",
-"summary": ""
-}
-,
-
-{
-"title": "Navigation pages",
-"tags": "",
-"keywords": "",
-"url": "tag_navigation.html",
-"summary": ""
-}
-,
-
-{
-"title": "News",
-"tags": "",
-"keywords": "",
-"url": "tag_news.html",
-"summary": ""
-}
-,
-
-{
-"title": "Publishing pages",
-"tags": "",
-"keywords": "",
-"url": "tag_publishing.html",
-"summary": ""
-}
-,
-
-{
-"title": "Single sourcing pages",
-"tags": "",
-"keywords": "",
-"url": "tag_single_sourcing.html",
-"summary": ""
-}
-,
-
-{
-"title": "Special layout pages",
-"tags": "",
-"keywords": "",
-"url": "tag_special_layouts.html",
-"summary": ""
-}
-,
-
-{
-"title": "Troubleshooting pages",
-"tags": "",
-"keywords": "",
-"url": "tag_troubleshooting.html",
-"summary": ""
-}
-,
-
-{
-"title": "",
-"tags": "",
-"keywords": "",
-"url": "titlepage.html",
-"summary": ""
-}
-,
-
-{
-"title": "",
-"tags": "",
-"keywords": "",
-"url": "tocpage.html",
-"summary": ""
-}
-,
-
-{
-"title": "",
-"tags": "",
-"keywords": "",
-"url": "tooltips.html",
-"summary": ""
-}
-,
-
 
 
 
@@ -1017,6 +882,3 @@
 
 
 ]
-
-
-
