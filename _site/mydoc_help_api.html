@@ -121,7 +121,7 @@
                 
                 
                 
-                <li><a href="https://github.com/tomjoht/documentation-theme-jekyll" target="_blank" rel="noopener">GitHub</a></li>
+                <li><a href="https://github.com/yusuftechno/yusuftechno.github.io" target="_blank" rel="noopener">GitHub</a></li>
                 
                 
                 
@@ -192,7 +192,7 @@
                 <li>
                     <!--start search-->
                     <div id="search-demo-container">
-                        <input type="text" id="search-input" placeholder="search...">
+                        <input type="text" id="search-input" placeholder="Cari sesuatu...?">
                         <ul id="results-container"></ul>
                     </div>
                     <script src="js/jekyll-search.js" type="text/javascript"></script>
@@ -202,7 +202,7 @@
                                 resultsContainer: document.getElementById('results-container'),
                                 dataSource: 'search.json',
                                 searchResultTemplate: '<li><a href="{url}" title="Help APIs and UI tooltips">{title}</a></li>',
-                    noResultsText: 'No results found.',
+                    noResultsText: 'Tidak Ditemukan !',
                             limit: 10,
                             fuzzy: true,
                     })
@@ -717,7 +717,7 @@ search: exclude
 
 <p>You can add different fields depending on how you want the JSON to be structured. Here we just have to fields: <code class="language-plaintext highlighter-rouge">doc_id</code> and <code class="language-plaintext highlighter-rouge">body</code>. And the JSON is looking just in the tooltips collection that we created.</p>
 
-<div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip:</b> Check out <a href="https://google.github.io/styleguide/jsoncstyleguide.xml">Google’s style guide</a> for JSON. These best practices can help you keep your JSON file valid.</div>
+<div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tips:</b> Check out <a href="https://google.github.io/styleguide/jsoncstyleguide.xml">Google’s style guide</a> for JSON. These best practices can help you keep your JSON file valid.</div>
 
 <p>Note that you can create different JSON files that specialize in different content. For example, suppose you have some getting started information. You could put that into a different JSON file. Using the same structure, you might add an <code class="language-plaintext highlighter-rouge">if</code> tag that checks whether the page has frontmatter that says <code class="language-plaintext highlighter-rouge">type: getting_started</code> or something. Or you could put the content into separate collection entirely (different from tooltips).</p>
 
@@ -776,7 +776,7 @@ search: exclude
 
 <p>If you don’t have CORS enabled, users will see a CORS error/warning message in the console of the page making the request.</p>
 
-<div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip:</b> If enabling CORS is problematic, you could always just send developers the tooltips.json file and ask them to place it on their own server.</div>
+<div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tips:</b> If enabling CORS is problematic, you could always just send developers the tooltips.json file and ask them to place it on their own server.</div>
 
 <h2 id="7-explain-how-developers-can-access-the-help">7. Explain how developers can access the help</h2>
 
@@ -816,7 +816,7 @@ search: exclude
 
 <p>The <code class="language-plaintext highlighter-rouge">each</code> method looks through all the JSON content to find the item whose <code class="language-plaintext highlighter-rouge">page.id</code> is equal to <code class="language-plaintext highlighter-rouge">basketball</code>. It then looks for an element on the page named <code class="language-plaintext highlighter-rouge">#basketball</code> and adds a <code class="language-plaintext highlighter-rouge">data-content</code> attribute to that element.</p>
 
-<div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"></i> <b>Warning:</b> Make sure your JSON file is valid. Otherwise, this method won’t work. I use the <a href="https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa?hl=en">JSON Formatter extension for Chrome</a>. When I go to the tooltips.json page in my browser, the JSON content — if valid — is nicely formatted (and includes some color coding). If the file isn’t valid, it’s not formatted and there isn’t any color. You can also check the JSON formatting using <a href="http://jsonformatter.curiousconcept.com/">JSON Formatter and Validator</a>. If your JSON file isn’t valid, identify the problem area using the validator and troubleshoot the file causing issues. It’s usually due to some code that isn’t escaping correctly.</div>
+<div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"></i> <b>Peringatan:</b> Make sure your JSON file is valid. Otherwise, this method won’t work. I use the <a href="https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa?hl=en">JSON Formatter extension for Chrome</a>. When I go to the tooltips.json page in my browser, the JSON content — if valid — is nicely formatted (and includes some color coding). If the file isn’t valid, it’s not formatted and there isn’t any color. You can also check the JSON formatting using <a href="http://jsonformatter.curiousconcept.com/">JSON Formatter and Validator</a>. If your JSON file isn’t valid, identify the problem area using the validator and troubleshoot the file causing issues. It’s usually due to some code that isn’t escaping correctly.</div>
 
 <p>Why <code class="language-plaintext highlighter-rouge">data-content</code>? Well, in this case, I’m using <a href="http://getbootstrap.com/javascript/#popovers">Bootstrap popovers</a> to display the tooltip content. The <code class="language-plaintext highlighter-rouge">data-content</code> attribute is how Bootstrap injects popovers.</p>
 
@@ -971,7 +971,7 @@ search: exclude
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2026 Copyright Yusuf Techno. All rights reserved. <br />
-<span>Page last updated:</span> July 3, 2016<br/> Site last generated: Feb 6, 2026 <br />
+<span>Page last updated:</span> July 3, 2016<br/> Site last generated: 6 Feb, 2026 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>

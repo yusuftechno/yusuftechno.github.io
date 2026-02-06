@@ -51,6 +51,10 @@ entries:
   - title: Kegiatan
     output: web
     folderitems:
+    
+    - title: Gallery
+      url: #
+      output: web
 
       subfolders:
       - title: Photo

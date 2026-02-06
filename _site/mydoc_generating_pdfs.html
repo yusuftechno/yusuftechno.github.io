@@ -121,7 +121,7 @@
                 
                 
                 
-                <li><a href="https://github.com/tomjoht/documentation-theme-jekyll" target="_blank" rel="noopener">GitHub</a></li>
+                <li><a href="https://github.com/yusuftechno/yusuftechno.github.io" target="_blank" rel="noopener">GitHub</a></li>
                 
                 
                 
@@ -192,7 +192,7 @@
                 <li>
                     <!--start search-->
                     <div id="search-demo-container">
-                        <input type="text" id="search-input" placeholder="search...">
+                        <input type="text" id="search-input" placeholder="Cari sesuatu...?">
                         <ul id="results-container"></ul>
                     </div>
                     <script src="js/jekyll-search.js" type="text/javascript"></script>
@@ -202,7 +202,7 @@
                                 resultsContainer: document.getElementById('results-container'),
                                 dataSource: 'search.json',
                                 searchResultTemplate: '<li><a href="{url}" title="Generating PDFs">{title}</a></li>',
-                    noResultsText: 'No results found.',
+                    noResultsText: 'Tidak Ditemukan !',
                             limit: 10,
                             fuzzy: true,
                     })
@@ -677,7 +677,7 @@ prince <span class="nt">--javascript</span> <span class="nt">--input-list</span>
 <span class="na">pdf_sidebar</span><span class="pi">:</span> <span class="s">mydoc_sidebar</span>
 </code></pre></div></div>
 
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Although you’re creating a PDF, you must still build an HTML web target before running Prince. Prince will pull from the HTML files and from the file-list for the TOC.</div>
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Catatan:</b> Although you’re creating a PDF, you must still build an HTML web target before running Prince. Prince will pull from the HTML files and from the file-list for the TOC.</div>
 
 <p>Note that the default page layout specified by this configuration file is <code class="language-plaintext highlighter-rouge">page_print</code>. This layout strips out all the sections that shouldn’t appear in the print PDF, such as the sidebar and top navigation bar.</p>
 
@@ -718,7 +718,7 @@ prince <span class="nt">--javascript</span> <span class="nt">--input-list</span>
 
 <p>There’s another file (in the root directory of the theme) that is critical to the PDF generation process: prince-list.txt. This file simply iterates through the items in your sidebar and creates a list of links. Prince will consume the list of links from prince-list.txt and create a running PDF that contains all of the pages listed, with appropriate cross references and styling for them all.</p>
 
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> If you have any files that you do not want to appear in the PDF, add <code>output: web</code> (rather than <code>output: pdf</code>) in the list of attributes in your sidebar. The prince-list.txt file that loops through the mydoc_sidebar.yml file to grab the URLs of each page that should appear in the PDF will skip over any items that do not list <code>output: pdf</code> in the item attributes. For example, you might not want your tag archives to appear in the PDF, but you probably will want to list them in the online help navigation.</div>
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Catatan:</b> If you have any files that you do not want to appear in the PDF, add <code>output: web</code> (rather than <code>output: pdf</code>) in the list of attributes in your sidebar. The prince-list.txt file that loops through the mydoc_sidebar.yml file to grab the URLs of each page that should appear in the PDF will skip over any items that do not list <code>output: pdf</code> in the item attributes. For example, you might not want your tag archives to appear in the PDF, but you probably will want to list them in the online help navigation.</div>
 
 <h2 id="4-customize-your-headers-and-footers">4. Customize your headers and footers</h2>
 
@@ -740,7 +740,7 @@ prince <span class="nt">--javascript</span> <span class="nt">--input-list</span>
 <span class="p">}</span>
 </code></pre></div></div>
 
-<div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip:</b> If you have a link to a file download, or some other link that shouldn’t have a cross reference (such as link used in JavaScript for navtabs or collapsible sections, for example, add <code class="language-plaintext highlighter-rouge">noCrossRef</code> as a class to the link to avoid having it say “page 0” in the cross reference.</div>
+<div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tips:</b> If you have a link to a file download, or some other link that shouldn’t have a cross reference (such as link used in JavaScript for navtabs or collapsible sections, for example, add <code class="language-plaintext highlighter-rouge">noCrossRef</code> as a class to the link to avoid having it say “page 0” in the cross reference.</div>
 
 <p>This style specifies that after links to web resources, the URL should be inserted instead of the page number:</p>
 
@@ -918,7 +918,7 @@ echo "done";
 
 <p>Make sure that the path to the prince-list.txt is correct. For the output directory, I like to output the PDF file into my project’s source (into the files folder). Then when I build the web output, the PDF is included and something I can refer to.</p>
 
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> You might not want to include the PDF in your project files, since you’re likely committing the PDF to Github and as a result saving the changes from one PDF version to another with each save.</div>
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Catatan:</b> You might not want to include the PDF in your project files, since you’re likely committing the PDF to Github and as a result saving the changes from one PDF version to another with each save.</div>
 
 <h2 id="6-add-conditions-for-your-new-builds-in-the-pdf-config-file">6. Add conditions for your new builds in the PDF config file</h2>
 
@@ -1023,7 +1023,7 @@ javascript content here ...
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2026 Copyright Yusuf Techno. All rights reserved. <br />
-<span>Page last updated:</span> July 3, 2016<br/> Site last generated: Feb 6, 2026 <br />
+<span>Page last updated:</span> July 3, 2016<br/> Site last generated: 6 Feb, 2026 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>
