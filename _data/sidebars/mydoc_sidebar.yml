@@ -52,10 +52,6 @@ entries:
     output: web
     folderitems:
 
-    - title: Gallery
-      url: #
-      output: web
-
       subfolders:
       - title: Photo
         output: web

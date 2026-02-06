@@ -1201,3 +1201,11 @@ h4.panel-title {
         display:block !important;
     }
 }
+
+/* Membuat teks folder tetap terlihat seperti menu yang bisa diklik/interaktif */
+#mysidebar li {
+    cursor: default;
+}
+#mysidebar li > ul {
+    display: block; /* Pastikan sub-menu tetap muncul */
+}
